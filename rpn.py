@@ -6,10 +6,13 @@ def calculate(arg):
 			value = int(token)
 			stack.append(value)
 		except ValueError:
-			arg1 = stack.pop()
-			arg2 = stack.pop()
-			return arg1 + arg2
-
+                        arg1 = stack.pop()
+                        arg2 = stack.pop()
+ 
+                        if(token == '+'):
+                           return arg1 + arg2
+                        elif(token == '^'):
+                           return arg1 ^ arg2
 def main():
     while True:
         calculate(input('rpn calc> '))
