@@ -12,7 +12,7 @@ def calculate(arg):
                         if(token == '+'):
                            return arg1 + arg2
                         elif(token == '^'):
-                           return arg1 ^ arg2
+                           return arg1 ** arg2
 def main():
     while True:
         calculate(input('rpn calc> '))
